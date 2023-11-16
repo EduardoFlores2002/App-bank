@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    height: 100vh;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: white;
+    height: 100vh;
+}
+
+.user-sesion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%; /* Ajustado el ancho según tus necesidades */
+    margin: 0 auto; /* Para centrar horizontalmente */
+    height: 70%;
+    padding: 0;
+}
+
+.conteiner {
+    border: 1px solid black;
+    margin: 1rem auto; /* Para centrar horizontalmente */
+    background-color: #e74c3c;
+    text-align: left;
+    width: 70%; /* Ajustado el ancho según tus necesidades */
+    height: 70vh; /* Ajustado la altura según tus necesidades */
+    padding: 1rem 3rem 3rem;
+    border-radius: 10px;
+}
+
+
+.conteiner h2 {
+    text-align: center;
+}
+
+.conteiner label {
+    color: #646464;
+}
+
+.texto-sobre-hr {
+    position: relative;
+}
+
+.texto-sobre-hr::after {
+    content: "OR";
+    position: absolute;
+    top: -0.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #e74c3c;
+    padding: 0 1em;
+    text-align: center;
+}
+
+#marca{
+    display: flex;
+    margin-bottom: 0;
+    color: black;
+    justify-content: center;
+}
+#marca img{
+    width: 50px;
+}
+#app button {
+    color: white;
+    background-color: #333333;
+    margin-top: 1rem;
+    margin-bottom: 1rem ;
+    height: 2.5rem;
+    width: 100%; /* Ancho automático al 100% */
+    border: 1px #333333 solid;
+    border-radius: 10px;
+}
+
+.conteiner input {
+    height: auto; /* Altura automática para ajustarse al contenido */
+    width: 100%; /* Ancho automático al 100% */
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+#app button:hover {
+    background-color: #636363;
+}#conteiner-app{
+    display: grid;
+    justify-content: center;
+}
+#Header-app h1{
+    color: black;
+}
+#Header-app{
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    width: auto;
+    padding: 1rem 3rem 1rem 3rem;
+    height: 2rem;
+}
+#Header-app a{
+    text-decoration: none;
+    background-color: #e74c3c;
+    color: white;
+    border: 1px black solid;
+    border-radius: 5px;
+    width: 7rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Header-app a:hover{
+    background-color: #964037;
+    color: white;
+   
+}
+.conteiner-transaction{
+    width: 100%;
+    background-color: white;
+    height: 500px;
+    height: auto;
+}
+#data-user{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    text-align: center;
+    background-color: #e74c3c;
+    width: 100%;
+    height: auto;
+    color: white;
+    font-size: 1em;
+}
+#data-user div span{
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    color: black;
+}
+#data-app{
+    display: flex;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 2rem 0;
+}
+#conteiner-info{
+    display: flex;
+    background-color: rgb(245, 245, 245);
+}
+table{
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    border-collapse: collapse;
+}
+th{
+    border-bottom: 1px rgb(49, 49, 49) solid;
+    width: 1250px;
+    text-align: justify;
+}
+tr:nth-child(even) {
+    background-color: rgb(255, 143, 129); /* Fondo rojo para las celdas pares */
+}
+td{
+    text-align: justify;
+}
+
+.dialog {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    animation: slideFromTop 0.3s ease-in-out;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .dialog.show {
+    display: flex;
+  }
+  
+  @keyframes slideFromTop {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  .dialog-buttons {
+    text-align: right;
+  }
+  
+  /* ------------------------------------------------------------------------ */
+  /* Utilities */
+  /* ------------------------------------------------------------------------ */
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .hide-xs {
+    display: none;
+  }
+  #transactionForm {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+#transactionForm label,
+#transactionForm input,
+#transactionForm button {
+    display: block;
+    width: calc(100% - 30px); /* Establece el ancho deseado, ajusta según sea necesario */
+    border-radius: 5px;
+    margin-bottom: 10px; /* Ajusta el margen según tus necesidades, he cambiado el valor para reducir el espacio */
+}
+
+#transactionForm button {
+    background-color: rgb(239 68 68);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    height: 40px; /* Iguala la altura al input */
+    line-height: 20px; /* Ajusta el espaciado interno para centrar el texto verticalmente */
+}
+
+#transactionForm button:hover {
+    background-color: rgb(190, 61, 44);
+}
+
+#transactionForm::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media (min-width: 1024px) {
+    .conteiner {
+        width: 70%;
+        margin: 2rem auto;
+        padding: 2rem 4rem 4rem;
+    }
+    .user-sesion {
+        width: 40%;
+
+    
+}
+}
+/* Estilos específicos para pantallas medianas */
+@media (max-width: 830px) {
+    .conteiner {
+        width: 90%;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+    .user-sesion {
+        width: 60%;
+    }
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 434px) {
+    #Header-app h1 {
+        font-size: 1.5rem;
+    }
+
+    .conteiner {
+        width: 80%;
+        padding: 0.5rem;
+        margin: 0.5rem auto;
+        height: 60%;
+    }
+    .user-sesion {
+        width: 80%;
+    }
+
+    #app button {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .conteiner input {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 280px) {
+    .user-sesion {
+        width: 95%;
+    }
+    #Header-app h1 {
+        font-size: 1rem; /* Tamaño específico del h1 para pantallas muy pequeñas */
+    }
+
+    .conteiner {
+        width: 70%;
+        padding: 0.2rem;
+        margin: 0.2rem auto;
+    }
+
+    #app button {
+        font-size: 0.7rem;
+    }
+
+    .conteiner input {
+        font-size: 0.7rem;
+    }
+}
+
+
